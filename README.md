@@ -1,5 +1,7 @@
 # GitLab MCP Server
 
+THIS IS A FORK OF THE ORIGINAL GITLAB MCP SERVER BY @ZEREIGHT FOR IMMIDIATE CHANGES TO MAKE IT USABLE AFTER zod-to-json-schema BROKEN VERSION.
+
 [![Star History Chart](https://api.star-history.com/svg?repos=zereight/gitlab-mcp&type=Date)](https://www.star-history.com/#zereight/gitlab-mcp&Date)
 
 ## @zereight/mcp-gitlab
@@ -49,7 +51,7 @@ Then configure the MCP server with OAuth:
   "mcpServers": {
     "gitlab": {
       "command": "npx",
-      "args": ["-y", "@zereight/mcp-gitlab"],
+      "args": ["-y", "@idany/mcp-gitlab"],
       "env": {
         "GITLAB_USE_OAUTH": "true",
         "GITLAB_OAUTH_CLIENT_ID": "your_oauth_client_id",
@@ -106,7 +108,7 @@ Then configure the MCP server with OAuth:
     "GitLab-MCP": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@zereight/mcp-gitlab"],
+      "args": ["-y", "@idany/mcp-gitlab"],
       "env": {
         "GITLAB_PERSONAL_ACCESS_TOKEN": "${input:gitlab-token}",
         "GITLAB_API_URL": "your-fancy-gitlab-url",
